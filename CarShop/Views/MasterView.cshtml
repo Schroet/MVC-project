@@ -1,0 +1,36 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Maserati</title>
+    <link rel="stylesheet" href="/Content/css/styles.css" />
+    <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+    <script src="/Content/js/scrypts.js"></script>
+</head>
+<body>
+    <div id="wrapper">
+        <div id="header">
+            <img alt="Изображение" src="/Content/images/Header.png" />
+        </div>
+        <div id="content">
+            <div id="nav">
+                <ul>
+                    <li><a href="index.html"><img alt="Изображение" src="/Content/images/Logo.jpg" /></a></li>
+                    <li><a href="Ghibili.html">Ghibli</a></li>
+                    <li><a href="Quattroporte.html">Quattroporte</a></li>
+                    <li><a href="GranTurismo.html">GranTurismo</a></li>
+                </ul>
+                <div id="map"><img src="/Content/images/Map.jpg" alt="Map"></div>
+            </div>
+            <div id="main">
+                @RenderBody()
+            </div>
+        </div>
+        <div id="footer">Copyrite</div>
+    </div>
+</body>
+</html>
